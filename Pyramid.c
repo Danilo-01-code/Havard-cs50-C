@@ -1,37 +1,37 @@
 #include <stdio.h>
 #include <cs50.h>
 
-// Função para imprimir a pirâmide
+// Function to print pyramid
 void pyramid(int height) {
-    // Itera sobre cada linha da pirâmide
+    // Itera each pyramid row
     for (int i = 1; i <= height; i++) {
-        // Define os espaços antes dos hashes
+        // Spaces before Hashs
         for (int j = 0; j < height - i; j++) {
             printf(" ");
         }
-        // Imprime os hashes do lado esquerdo5 
+        // Print hashes from the left side
         for (int j = 0; j < i; j++) {
             printf("#");
         }
-        // Espaço entre os dois lados da pirâmide
+        //Space between the two pyramid sides
         printf("  ");
-        // Imprime os hashes do lado direito
+        // Print hashes from the right side
         for (int j = 0; j < i; j++) {
             printf("#");
         }
-        // Vai para a próxima linha
+        // Go to the next row
         printf("\n");
     }
 }
 
 int main(void) {
     int height;
-    // Solicita a altura da pirâmide
+    // Asks piramid Height
     do {
         height = get_int("Height: ");
-    } while (height < 1 || height > 8); // Garantir que a altura seja entre 1 e 8
+    } while (height < 1 || height > 8);
 
-    // Chama a função que imprime a pirâmide
+    // Call function 
     pyramid(height);
     return 0;
 }
