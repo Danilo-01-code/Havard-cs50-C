@@ -15,7 +15,7 @@ void cipher(int key, const char *texto, char *resultado) {
             resultado[i] = char_at;
         }
     }
-    resultado[strlen(texto)] = '\0'; =
+    resultado[strlen(texto)] = '\0'; 
 }
 
 int main() {
