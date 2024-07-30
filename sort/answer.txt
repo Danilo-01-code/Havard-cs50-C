@@ -1,0 +1,11 @@
+sort 1 == Bubble sort
+
+how do you know: Fast in a sorted list
+
+sort 2 == Megle sort
+
+how do you know: Ran fasted in a random list
+ 
+sort 3 == Selected sort
+
+how do you know: Lowest
